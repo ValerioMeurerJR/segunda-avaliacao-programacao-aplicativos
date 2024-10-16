@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Concessionaria</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  
+
+<body onload="Onload()">
+    <header>
+      <h1>Concessionária FIESC SENAI</h1>
+  </header>
+    <div class="container">
+        <div class="content">
+            <div class="form-section">
+                <h2>Cadastrar Veículo</h2>
+                <form>
+                    <label for="modelo-text">Modelo</label>
+                    <input type="text" id="modelo-text" required>
+                    <label for="cor-text">Cor</label>
+                    <input type="text" id="cor-text" required>
+                    <label for="ano-text">Ano</label>
+                    <input type="number" id="ano-text" required>
+                    <label for="preco-text">Preço</label>
+                    <input type="number" id="preco-text" required>
+
+                    <label for="foto-text">Foto</label>
+                    <input type="text" id="foto-text" required>
+
+                    <label for="vendido-checkbox">Vendido</label>
+                    <input type="checkbox" id="vendido-checkbox">
+                    <button id="add-tarefa" onclick="addcarro()">Cadastrar</button>
+                </form>
+            </div>
+            <div class="carro-lista" id="carro-lista">
+            
+            </div>
+        </div>
+    </div>
   <script src="script.js"></script>
 </body>
+
 </html>
